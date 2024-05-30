@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @CrossOrigin(origins = "*")
+    @CrossOrigin
     @GetMapping("/")
     public String index() {
         return "Hello from Spring Boot BE!";
